@@ -4,11 +4,13 @@ def prime?(num)
   n = 2
   if nu == (1 | 0)
     false
+  elsif num == 0
+    false
   else
-  while n < nu
-    return false if nu % n == 0
-    n += 1
+    while n < nu
+      return false if nu % n == 0
+      n += 1
+    end
+    true
   end
-  true
-end
 end
